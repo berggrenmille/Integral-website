@@ -1,4 +1,39 @@
-body
+html, body
+{
+  background-color: red;
+  margin: 0px;
+  padding: 0px;
+}
+#ui-wrapper
+{
+  position: absolute;
+  padding: 0px;
+  margin: 0px;
+  min-width: 100%;
+  min-height: 100%;
+  background-color: white;
+
+  /*lägg wrappern i mitten av sidan*/
+  margin-left: auto;
+  margin-right: auto;
+}
+#nav-wrapper
+{
+  position: relative;
+  float: left;
+  height: 100vh;
+  width: 200px;
+  background-color: blue;
+}
+#chat-wrapper
+{
+  position: relative;
+  float: left;
+  height: 100vh;
+  width: 200px;
+  background-color: green;
+}
+#chat-wrapper:hover
 {
   background-color: red;
 }
