@@ -1,0 +1,103 @@
+@font-face
+		{
+			font-family: test;
+			src: url("Fonts/good times rg.ttf");
+		}
+		Body
+		{
+			background-image: url("Images/Big Background.png");
+			background-repeat: no-repeat;
+			background-position: center top;
+			background-color: #282828;
+			background-attachment: fixed;
+			font-family: test;
+		}
+
+
+		.nav
+		{
+
+			height: 100%;
+			width: 0;
+			position: fixed;
+			z-index: 1;
+			top: 0;
+			left: 0;
+			background-color: #111;
+			overflow-x: hidden;
+			transition: 0.5s;
+			padding-top: 60px;
+		}
+		.nav a
+		{
+			padding: 8px 8px 8px 32px;
+			text-decoration: none;
+			font-size: 2vw;
+			color: #f2f2f2;
+			display: block;
+			transition: 0.3s;
+		}
+		.nav a:hover
+		{
+			background-color: #282828;
+			color: #555555;
+		}
+		.nav a.active
+		{
+			background-color: #ff0018;
+			color: #282828;
+		}
+		.nav .closebtn
+		{
+			position: absolute;
+			top: 0;
+			right: 2vw;
+			font-size: 2vw;
+			margin-left: 50px;
+		}
+		#top
+		{
+			position: fixed;
+			top: 0;
+			left: 0;
+			width: 100%;
+			height: 5vw;
+			color: #282828;
+			transition: all 0.5s;
+			background-color: #ff0018;
+			text-align: center;
+			font-size: .8vw;
+			color: white;
+		}
+		#main
+		{
+			position: fixed;
+			top: 5vw;
+			left: 0;
+			transition: margin-left .5s;
+			padding: 16px;
+			background-color: #ff0018;
+			color: white;
+		}
+
+		.wrapper
+		{
+			z-index: -1;
+			position: absolute;
+			top: 5vw;
+			left: 83%;
+			display: grid;
+			grid-template-columns: 10vw;
+			grid-gap: 10px;
+			background-color: #fff;
+			color: #444;
+		}
+		.box
+		{
+		    background-color: #444;
+		    color: #fff;
+		    border-radius: 5px;
+		    padding: 3vw;
+		    font-size: 150%;
+			overflow: auto;
+		}
