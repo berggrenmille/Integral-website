@@ -3,6 +3,11 @@ html, body
   background-color: red;
   margin: 0px;
   padding: 0px;
+  overflow:hidden;
+}
+.bordered
+{
+  border: solid red 2px;
 }
 #ui-wrapper
 {
@@ -20,9 +25,9 @@ html, body
 #nav-wrapper
 {
   position: relative;
-  float: left;
-  height: 100vh;
-  width: 200px;
+  left: 252px;
+  height: 80px;
+  width: calc(100% - 250px);
   background-color: blue;
 }
 #chat-wrapper
@@ -30,8 +35,28 @@ html, body
   position: relative;
   float: left;
   height: 100vh;
-  width: 200px;
-  background-color: green;
+  width: 250px;
+  background-color: black;
+}
+#chat-logo-wrapper
+{
+  position: relative;
+  left: 0px;
+  min-width: 250px;
+  min-height: 250px;
+  background-image: url('./Images/No background.png');
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position-y: 10px;
+}
+#chat-container
+{
+  background-color: orange;
+  display: inline-block;
+  width: 250px;
+  height: calc(100% - 250px);
+
+
 }
 #chat-wrapper:hover
 {
