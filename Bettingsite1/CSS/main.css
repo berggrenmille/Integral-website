@@ -1,9 +1,17 @@
+
+@font-face
+{
+	font-family: test;
+	src: url('../Fonts/good times rg.ttf');
+}
+
 html, body
 {
   background-color: red;
   margin: 0px;
   padding: 0px;
   overflow:hidden;
+  font-family: test;
 }
 .bordered
 {
@@ -30,6 +38,29 @@ html, body
   width: calc(100% - 250px);
   background-color: blue;
 }
+
+#nav-list {
+  background: pink;
+  list-style: none;
+  overflow: hidden;
+  height: 80px;
+  margin: 0;
+}
+#nav-list li
+{
+  float: left;
+  padding-left: : 50px;
+  padding-right: 50px;
+
+}
+#nav-list li a
+{
+  text-decoration: none;
+  color: red;
+  font-size: 50px;
+  font-weight: 800;
+}
+
 #chat-wrapper
 {
   position: relative;
@@ -44,7 +75,7 @@ html, body
   left: 0px;
   min-width: 250px;
   min-height: 250px;
-  background-image: url('./Images/No background.png');
+  background-image: url('../Images/No background.png');
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 10px;
@@ -55,7 +86,6 @@ html, body
   display: inline-block;
   width: 250px;
   height: calc(100% - 250px);
-
 
 }
 #chat-wrapper:hover
