@@ -1,8 +1,16 @@
-
+/*Custom fonts*/
 @font-face
 {
 	font-family: test;
 	src: url('../Fonts/good times rg.ttf');
+}
+
+/*Declare global variables*/
+:root
+{
+    --main-bg-color: white;
+		--main-border-size: 2px;
+		--main-border-color: red;
 }
 
 html, body
@@ -13,10 +21,13 @@ html, body
   overflow:hidden;
   font-family: test;
 }
-.bordered
+
+/*Class customization*/
+.main-border
 {
-  border: solid red 2px;
+  border: solid var(--main-border-color) var(--main-border-size);
 }
+/*ID customization*/
 #ui-wrapper
 {
   position: absolute;
@@ -33,7 +44,7 @@ html, body
 #nav-wrapper
 {
   position: relative;
-  left: 252px;
+  left: calc(250px + var(--main-border-size));
   height: 80px;
   width: calc(100% - 250px);
   background-color: blue;
@@ -46,20 +57,20 @@ html, body
   height: 80px;
   margin: 0;
 }
-#nav-list li
-{
-  float: left;
-  padding-left: : 50px;
-  padding-right: 50px;
+	#nav-list li
+	{
+	  float: left;
+	  padding-left: : 50px;
+	  padding-right: 50px;
 
-}
-#nav-list li a
-{
-  text-decoration: none;
-  color: red;
-  font-size: 50px;
-  font-weight: 800;
-}
+	}
+		#nav-list li a
+		{
+		  text-decoration: none;
+		  color: red;
+		  font-size: 50px;
+		  font-weight: 800;
+		}
 
 #chat-wrapper
 {
@@ -79,6 +90,8 @@ html, body
   background-repeat: no-repeat;
   background-size: contain;
   background-position-y: 10px;
+	border-top: 0;
+	border-left: 0;
 }
 #chat-container
 {
@@ -86,9 +99,8 @@ html, body
   display: inline-block;
   width: 250px;
   height: calc(100% - 250px);
-
 }
-#chat-wrapper:hover
-{
-  background-color: red;
-}
+	#chat-wrapper:hover
+	{
+	  background-color: red;
+	}
