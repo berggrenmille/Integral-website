@@ -8,6 +8,10 @@
 /*Declare global variables*/
 :root
 {
+		--main-first-color: #ff0000;
+		--main-second-color: #660000;
+		--main-third-color: #330000;
+
     --main-bg-color: white;
 		--main-border-size: 2px;
 		--main-border-color: red;
@@ -28,16 +32,16 @@ html, body
   border: solid var(--main-border-color) var(--main-border-size);
 }
 /*ID customization*/
-#ui-wrapper
+#ui-wrapper /*The wrapper of everything*/
 {
   position: absolute;
   padding: 0px;
   margin: 0px;
   min-width: 100%;
   min-height: 100%;
-  background-color: white;
+  background-color: grey;
 
-  /*lägg wrappern i mitten av sidan*/
+  /*center wrapper*/
   margin-left: auto;
   margin-right: auto;
 }
@@ -95,7 +99,7 @@ html, body
 }
 #chat-container
 {
-  background-color: orange;
+  background-color: black;
   display: inline-block;
   width: 250px;
   height: calc(100% - 250px);
