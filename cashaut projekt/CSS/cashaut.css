@@ -1,0 +1,36 @@
+﻿.leftnav
+{
+	float: left;
+	margin-left: 0;
+	text-align: center;
+	margin-top: 100px;
+	background-color: red;
+	height: 1000px;
+	width: 200px;
+}
+
+.topdiv
+{
+	background-color: blue;
+	float: top;
+	margin-top: 0;
+}
+
+.skinlist
+{
+	float: left;
+	font-size: 30px;
+	margin-left: 5px;
+	text-align: left;
+	margin-top: 50px;
+}
+
+.botdiv
+{
+	margin-top: 900px;
+	margin-right: 0px;
+	float: right;
+	height: 200px;
+	width: 1687px;
+	background-color: green;
+}
