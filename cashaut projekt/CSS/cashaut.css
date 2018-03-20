@@ -1,9 +1,13 @@
-﻿.leftnav
+body
+{
+	margin: 0;
+	background-color: red;
+}
+
+﻿nav
 {
 	float: left;
-	margin-left: 0;
 	text-align: center;
-	margin-top: 100px;
 	background-color: red;
 	height: 1000px;
 	width: 200px;
