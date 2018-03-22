@@ -1,40 +1,82 @@
+@import url('https://fonts.googleapis.com/css?family=Bangers|Bevan|Fredoka+One|Oswald');
+/*
+font-family: 'Bangers', cursive;
+font-family: 'Fredoka One', cursive;
+font-family: 'Bevan', cursive;
+font-family: 'Oswald', sans-serif;
+*/
+
+:root
+{
+	--nav-height: 100px;
+}
+
 body
 {
 	margin: 0;
-	background-color: red;
+	background-color: white;
 }
 
 ﻿nav
 {
 	float: left;
-	text-align: center;
 	background-color: red;
-	height: 1000px;
-	width: 200px;
+	height: var(--nav-height);
+	min-width: 100%;
+
 }
 
-.topdiv
+nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: #333333;
+		font-family: 'Oswald', cursive;
+		height: var(--nav-height);
+}
+
+nav li {
+    float:right;
+}
+
+nav li a {
+    display: block;
+    color: white;
+    text-align: right;
+    padding: 40px;
+    text-decoration: none;
+
+}
+
+nav li a:hover {
+    background-color: #111111;
+		font-size: 110%;
+}
+
+.sidebar
 {
 	background-color: blue;
-	float: top;
-	margin-top: 0;
-}
-
-.skinlist
-{
 	float: left;
-	font-size: 30px;
-	margin-left: 5px;
-	text-align: left;
-	margin-top: 50px;
+	height: 100%;
+	min-height: calc(100% - var(--nav-height));
+	width: var(--nav-height);
+
 }
 
-.botdiv
+.sidebar ul
 {
-	margin-top: 900px;
-	margin-right: 0px;
-	float: right;
-	height: 200px;
-	width: 1687px;
-	background-color: green;
+	list-style: none;
+	margin-left: 0;
+	padding-left: 5px;
+}
+.sidebar ul li
+{
+  padding-left: 1em;
+  text-indent: -1em;
+}
+.sidebar ul li:before
+{
+	content: "\00BB \0020";
+  padding-right: 5px;
 }
